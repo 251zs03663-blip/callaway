@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>メルカリ風出品画面</title>
+    
+</head>
+
+<body>
+    <h1>商品を出品する</h1>
+    <form id="productForm">
+        <input type="text" id="productName" placeholder="商品名" required>
+        <input type="number" id="productPrice" placeholder="価格" required>
+        <button type="button" onclick="submitProduct()">出品する</button>
+        <input type="file" id="productImage" accept="image/*">
+        <img id="preview" style="max-width: 200px; display: block; margin-top: 10px;">
+    </form>
+
+    <script src="script.js"></script>
+    <h1>出品された商品一覧</h1>
+    <div id="productList"></div>
+    <script src="list.js"></script>
+</body>
+
+</html>
